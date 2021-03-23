@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À dorê</title>
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="adore.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;800">
+    
+</head>
+<body>
+    <nav>
+        <img src="logotipo - rosa.svg" style="height: 3.5vw;">
+        <div class="menus">
+            <a href="google.com">Sobre</a>
+            <a href="https://drive.google.com/file/d/1DWheFx7-ZDFBo0skcdBZVp4U5mf2Wgh3/view?usp=drivesdk">Manual de marca</a>
+            <a href="google.com">Login</a>
+        </div>
+    </nav>
+
+    <div class="slide">
+        <div class="container active">
+            <div class="conteudo">
+                <h1>Porções de amor,<br> de colher <br> em colher.</h1>
+
+            </div>
+            <img src="brownie-slide1-100.jpg" alt="">
+        </div>
+
+        <div class="container">
+            <div class="conteudo">
+                <h1>Porções de amor,<br> de colher <br> em colher.</h1>
+            </div>
+            <img src="comida-slide2-100.jpg" alt="">
+        </div>
+
+        <div class="container">
+            <div class="conteudo">
+                <h1>Porções de amor,<br> de colher <br> em colher.</h1>
+            </div>
+            <img src="bolo-slide3-100.jpg" alt="">
+        </div>
+
+        <div class="indicadores">
+            <div class="indicador active"></div>
+            <div class="indicador"></div>
+            <div class="indicador"></div>
+        </div>
+
+    </div>
+    <div class="area">
+        <img class="pattern"src="background.svg" alt="">
+        <div class="area-bege">
+            <div class="texto">
+                <h1>Quem somos nós</h1>
+                <p class="p-sobre">
+                    À Dorê vem das memórias, do carinho e saudade que moram em<br> cada receita.
+                    Contamos histórias através de receitas e presentes.<br> Uma demonstração de amor quando a distância requer adaptações, <br>
+                    um serviço pago e personalizado. <br>
+                    <br>
+                    O propósito do projeto surge da contação de histórias naturalmente<br>
+                    feita através das receitas que passam de família em <br> família, em diferentes preparos. <br>
+                    <br>
+                    O nome à dorê, curtinho e de fácil pronúncia, carrega valores da <br> cozinha com lembranças de afeto.
+                </p>
+            </div>
+
+            <img src="lanches.png" alt="">
+
+        </div>
+
+        <div class="area-bege2">
+            <p class="proposito">
+                    O propósito da <b>À Dorê é de encurtar</b> <br>
+                    distâncias e manter <b>histórias e<br>
+                    laços de amor </b> vivos através da<br>
+                    culinária, possibilitando o resgate de<br>
+                    uma memória através de um<br><b> presente único.</b>
+            </p>
+                
+            <video width="400" height="720" controls="controls">
+                <source src="adoreteaser.mov" type="video/mp4">
+                <object data="" width="400" height="720">
+                <embed width="400" height="720" src="Adorê teaser">
+                </object>
+            </video>
+        </div>
+    </div>
+   
+    
+    <div class="feedback">
+        <img src="feedback - 550px-100.jpg" alt="" class="backgr2">
+    </div>
+
+    <footer>
+        <img class ="img-footer" style="" src="logotipo - cinza.svg" style="height: 50px;"alt="">
+        <div class="menu1">
+            <p><b>Explorar</b></p>
+            <a href="google.com">Inicio</a>
+            <a href="google.com">Sobre</a>
+            <a href="google.com">Orçamento</a>
+        </div>
+        <div class="menu2">
+            <p><b>Ajuda</b></p>
+            <a href="google.com">FAQ</a>
+            <a href="google.com">Contato</a>
+        </div>
+        <div class="menu3">
+            <p><b>Siga-nos</b></p>
+           <div class="redes">
+               <a href="google.com"><img src="instagram.svg" alt=""></a>
+               <a href="google.com"><img src="youtube.svg" alt=""></a>
+               <a href="google.com"><img src="twitter.svg" alt=""></a>
+           </div>
+        </div>
+    </footer>
+
+<script>
+    let fotos = document.querySelectorAll(".slide .container");
+    let indicador = document.querySelectorAll(".slide .indicadores .indicador");
+    let contador = 0;
+
+    setInterval(function(){
+        if(contador <= 1){
+            fotos[contador].classList.remove("active");
+            indicador[contador].classList.remove("active");
+
+            contador = contador + 1;
+
+            fotos[contador].classList.add("active");
+            indicador[contador].classList.add("active");
+            console.log(contador);
+        }else{
+            fotos[contador].classList.remove("active");
+            indicador[contador].classList.remove("active");
+
+            contador = 0;
+
+            fotos[0].classList.add("active");
+            indicador[0].classList.add("active");
+            
+        }
+    }, 4000);
+</script>
+</body>
+</html>

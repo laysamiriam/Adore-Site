@@ -1,0 +1,356 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+}
+/* MENU */
+nav{
+    background-color: #ffdbb9;
+    height: 5vw;
+    display: flex;
+    width: 100%;
+}
+nav img{
+    padding: 0.5vw 0 1vw 9.2vw;
+}
+nav .menus{ 
+    display: flex;
+    width: 100vw;
+    padding-right: 7vw;
+    padding-left: 36vw;
+    justify-content: flex-end;
+}
+nav .menus a{
+    padding: 1.4vw 2.5vw 1.4vw 0;
+    text-decoration: none;
+    color: #ff6e60;
+    font-family:'Dosis', sans-serif;
+    font-weight: 400;
+    /* font-size: 1.15vw; */
+    font-size: 1.5vw;
+}
+
+/* SLIDE */
+.slide{
+    position: relative;
+    display: block;
+    height: 36vw;
+    width: 100%;
+    cursor: initial;
+}
+.slide .container img{
+    height: 36vw;
+    width: 100%;
+}
+.slide .container{
+    display: none;
+}
+.slide .container.active{
+    display: flex;
+}
+.slide .container .conteudo{
+    position: absolute;
+    padding: 0 0 0 9.2vw;
+    top: 60%;
+    transform: translate(0, -50%);
+}
+.slide .container .conteudo h1{
+    font-size: 3.3vw;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+}
+.slide .indicadores{
+    display: flex;
+    position: relative;
+    width: 6vw;
+    bottom: 4vw;
+    justify-content: space-between;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.slide .indicadores .indicador{
+    width: 1vw;
+    height: 1vw;
+    border: 0.01vw solid #ffdbb9;
+    border-radius: 50%;
+}
+.slide .indicadores .indicador.active{
+    background-color: #ffdbb9;
+}
+
+/* BACKGROUND ÁREA */
+.area{
+    background-image: linear-gradient(to right, #FEEFDF, #FDDCB9);
+    position: relative;
+}
+.area .pattern{ 
+    top:0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}  
+
+/* SOBRE NÓs */
+.area-bege{
+    /* background-color: lavender; */
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 4vw;
+    
+    height: 35vw;
+    width: 100%;
+    z-index: 1;
+}
+.area-bege .texto h1 {
+    color: #F26E63;
+    font-weight: 800;
+    margin-bottom: 1.3vw;
+    font-size: 2.7vw;
+}
+.area-bege .texto p {
+    color: #F26E63;
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+.area-bege img{
+    width: 33vw;
+}
+
+/* ÁREA DO VÍDEO */
+.area-bege2{
+    /* background-color: lemonchiffon; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    height: 49vw;
+    width: 100%;
+    z-index: 1;
+}
+
+.area-bege2 .proposito {
+    color: #F26E63;
+    font-weight: 400;
+    font-size: 2vw;
+    margin-left: 13vw;
+    text-align: center;
+}
+.area-bege2 .video2{
+    margin:auto;
+    /* padding-left: 20vw; */
+}
+.area-bege2 video{
+    width: 20vw;
+    height: 76vh;
+}
+
+
+/* ÁREA ROSA */
+.feedback{
+    height: 15vw;
+    /* display: flex;
+    justify-content: center;   
+    align-items: center;
+    position: relative; */
+}
+.feedback .backgr2{
+    width: 100%;
+    position: absolute;
+    height: 15vw;
+    z-index: 0;
+}
+
+/* FOOTER */
+footer{
+    background-color: #333333;
+    display: flex;
+    height: 16vw;
+    justify-content: flex-start;
+    z-index: 3;
+}
+footer .img-footer{
+    display: block;
+    margin-top: -6vw;
+    width: 6vw;
+    padding: 0 0px 0px 9.2vw;
+}   
+footer .menu1{
+    padding: 3.8vw 0px 0px 4.3vw;
+}
+footer .menu2{
+    padding: 3.8vw 0px 0px 4.3vw;
+}
+footer .menu1 p,footer .menu2 p, footer .menu3 p {
+    color: #999999;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+    font-size: 1.2vw;
+    text-decoration: none;
+}
+footer .menu1 a, footer .menu2 a{
+    display: block;
+    color: #999999;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 1.2vw;
+    text-decoration: none;
+}
+footer .menu3{
+    margin-right: 0;
+    padding: 3.8vw 9.5vw 0 0;
+    margin: 0 0 0 auto;
+}
+footer .menu3 a img{
+    height: 3vw;
+}
+footer .menu3 a{
+    padding: 0 0.2vw 0 0;
+}
+
+
+@media screen and (max-width:768px) {
+    .area .pattern{ 
+        top: 13vw;
+        height: 180vw;
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+    }  
+    
+    /* MENU */
+    nav{
+        height: 6vw;
+        display: flex;
+    }
+    nav img{
+        padding: 1vw 0 1vw 9.2vw;
+        width: 8vw;
+    }
+    nav .menus{ 
+        padding-right: 6vw;
+        padding-left: 34vw;
+    }
+    nav .menus a{
+        padding: 1.6vw 2.5vw 1.4vw 0;
+        font-size: 2vw;
+    }
+
+    /* slide */
+    .slide{
+        position: relative;
+        display: block;
+        height: 56vw;
+        width: 100%;
+        cursor: initial;
+    }
+    .slide .container img{
+        height: 56vw;
+        width: 100%;
+    }
+    .slide .container .conteudo h1{
+        font-size: 6vw;
+        color: white;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 800;
+    }
+
+    /* sobre */
+    .area-bege{
+        /* background-color: lavender; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 4vw;
+        margin: auto;
+        
+        height: 90vw;
+        width: 100%;
+        z-index: 1;
+    }
+    .area-bege .texto{
+        width: 65%;
+        display: block;
+        text-align: center;
+    }
+    .area-bege .texto h1 {
+        color: #F26E63;
+        font-weight: 800;
+        margin: auto;
+        text-align: center;
+        font-size: 7.3vw;
+    }
+    .area-bege .texto p {
+        color: #F26E63;
+        font-weight: 400;
+        display: inline-block; 
+        text-align: left;
+        font-size: 2.1vw;
+    }
+    .area-bege img{
+        width: 60%;
+        padding-top: 5vw;
+
+    }
+
+    /* ÁREA DO VÍDEO */
+    .area-bege2{
+        /* background-color: lemonchiffon; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        height: 89vw;
+        width: 100%;
+        z-index: 1;
+    }
+    .area-bege2 .proposito {
+        width: 40%;
+        color: #F26E63;
+        font-weight: 400;
+        margin:0;
+        font-size: 2.5vw;
+        text-align: center;
+    }
+    .area-bege2 video{
+        width: 40vw;
+        height: 70vh;
+    }
+    /* FOOTER */
+    footer{
+        height: 26vw;
+        justify-content: flex-start;
+    }
+    footer .img-footer{
+        display: block;
+        width: 13vw;
+
+        margin-top: -6vw;
+        padding: 0 0px 0px 7.2vw;
+    }   
+    footer .menu1{
+        padding: 7vw 0px 0px 4.3vw;
+    }
+    footer .menu2{
+        padding: 7vw 0px 0px 4.3vw;
+    }
+    footer .menu1 p,footer .menu2 p, footer .menu3 p {
+        font-size: 2.4vw;
+    }
+    footer .menu1 a, footer .menu2 a{
+        font-size: 2.2vw;
+    }
+    footer .menu3{
+        padding: 7vw 6.5vw 0 0;
+    }
+    footer .menu3 a img{
+        height: 4vw;
+    }
+
+}
